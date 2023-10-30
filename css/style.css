@@ -29,7 +29,9 @@
   font-size: 36px;
   font-weight: bold;
 }
-
+.navbar-nav .nav-item a:hover {
+  color: #7ED0BA;
+}
 #minutes-number,
 #seconds-number {
   font-size: 36px;
