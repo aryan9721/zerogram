@@ -10,7 +10,17 @@
   align-items: center;
   flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
 }
+.header-image{
+  display: flex;
+  justify-content: center;
+  height: 100%;
 
+}
+.heading-text{
+  position: absolute;
+  bottom: 50px;
+  color: #6DDABE;
+}
 .countdown-item {
   display: flex;
   flex-direction: column;
@@ -8655,7 +8665,7 @@ h1, h2, h3, h4, h5,
     opacity: .4;
     background: #000000; }
   .hero-wrap.hero-wrap-2 {
-    height: 600px; }
+    height: 400px; }
     .hero-wrap.hero-wrap-2 .overlay {
       opacity: .3;
       background: #000000; }
@@ -9018,8 +9028,25 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 767.98px) {
   .img-2 {
-    height: 700px; } }
-
+    height: 300px; } }
+    @media (max-width: 767px) {
+      .mobile-only {
+        display: block;
+      }
+      .desktop-only {
+        display: none;
+      }
+    }
+    
+    /* For devices with a width more than 768px */
+    @media (min-width: 768px) {
+      .mobile-only {
+        display: none;
+      }
+      .desktop-only {
+        display: block;
+      }
+    }
 .wrap-about {
   position: relative; }
   @media (max-width: 1199.98px) {
