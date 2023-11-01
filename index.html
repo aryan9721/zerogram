@@ -48,17 +48,26 @@
 			</div>
 		</div>
 	</div> -->
-
+	<div class="loading-screen">
+        <div class="loader">
+            <!-- <div class="spinner"></div> -->
+            <img src="images/logo.png" alt="Loading Logo" class="loading-logo">
+        </div>
+    </div>
+	<div class="content">
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<!-- <a class="navbar-brand" href="index.html"><span>ZER</span>O<span>GRAM</span></a> -->
 			<img src="./images/logo.png" style="    margin-left: 2%;
 			min-width: 144px;
 		 width: 20% " />
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+		aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="bar"></span>
+		<span style="margin-top: 10px;" class="bar"></span>
+		<span style="margin-top: 20px;" class="bar"></span>
+		</button>
+
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
@@ -991,7 +1000,7 @@
 				stroke="#F96D00" />
 		</svg></div>
 
-
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -1009,7 +1018,23 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+// Simulate a loading process (you can replace this with your own logic)
+setTimeout(function() {
+    const loadingScreen = document.querySelector('.loading-screen');
+    const content = document.querySelector('.content');
+    
+    loadingScreen.style.animation = 'fadeOut 1s ease-in-out forwards';
+    setTimeout(() => {
+        loadingScreen.style.display = 'none'; // Hide the loading screen
+        content.style.display = 'block'; // Show the content
+    }, 1000);
+}, 2000); // Simulating a 3-second loading time
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+  this.classList.toggle('active');
+});
 
+	</script>
 </body>
 
 </html>
