@@ -9863,9 +9863,11 @@ textarea.form-control {
 
 .contact-section .dbox {
   width: 100%;
-  background: #6DDABE;
+  background: linear-gradient(45deg, #6DDABE , lightblue);;
   padding: 2em;
-  border-radius: 4px; }
+  border-radius: 4px; 
+  margin-bottom: 10px;
+}
 
 .block-9 .form-control {
   outline: none !important;
