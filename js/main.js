@@ -296,3 +296,26 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+// function fetchDataFromAPI() {
+// 	var requestOptions = {
+// 	  method: 'GET',
+// 	  redirect: 'follow',
+// 	};
+  
+// 	fetch("http://localhost:4000/api/project", requestOptions)
+// 	  .then(response => response.text())
+// 	  .then(result => displayData(result))
+// 	  .catch(error => console.log('Error:', error));
+//   }
+  
+//   function displayData(data) {
+// 	var apiDataElement = document.getElementById('apiData');
+// 	apiDataElement.textContent = data;
+//   }
+  
+//   // Call the fetchDataFromAPI function when the page loads
+//   fetchDataFromAPI();
+
+
+
+  
