@@ -969,16 +969,16 @@
 					<div class="ftco-footer-widget mb-4">
 						<h2 style="margin-bottom: 10px;" class="ftco-heading-2">Contact us</h2>
 						<!-- <p>Far far away, behind the word mountains, far from the countries.</p> -->
-						<form action="#" class="subscribe-form">
+						<form  id="contactForm" action="#" class="subscribe-form">
 							<div class="form-group">
 								<div>
-									<input type="text" class="form-control mb-2 text-center" placeholder="Your Name">
-									<input type="text" class="form-control mb-2 text-center"
+									<input type="text" id="name" name="name" class="form-control mb-2 text-center" required placeholder="Your Name">
+									<input type="email" id="email" name="email" class="form-control mb-2 text-center" required
 										placeholder="Enter email address">
 								</div>
-								<div><input type="text" class="form-control mb-2 text-center"
+								<div><input type="text" id="message" name="message" class="form-control mb-2 text-center" required
 										placeholder="Your Message">
-									<input type="submit" value="Submit" class="form-control submit px-3">
+										<button type="button"  onclick="contactForm()" class="form-control submit px-3">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -1039,6 +1039,7 @@ document.querySelector('.navbar-toggler').addEventListener('click', function() {
 
 	</script>
 	<!-- <script src="api.js"></script> -->
+	<script src="dynamicPages/contact.js" defer></script>
 </body>
 
 </html>
