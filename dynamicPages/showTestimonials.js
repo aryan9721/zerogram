@@ -80,6 +80,8 @@ function displayData(dataArray) {
                             </div>
                         </div>`;
         owl.append(newItem);
+        $('#spinner').css('display','none');
+
     });
 
     // Initialize Owl Carousel
@@ -112,5 +114,6 @@ function fetchTestimonials() {
     });
 }
 $(document).ready(function () {
+    $('#spinner').css('display','flex');
     fetchTestimonials();
 });

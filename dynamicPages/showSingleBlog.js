@@ -41,11 +41,16 @@ function getblogs() {
     var desc = $('#blog-desc');
     var author = $('#blog-author');
     var bg = $('#blog-cover');
+    var aboutauthor = $('#about-author');
+    var creatorImage = $('#author-image');
     title.text(blog.title);
     desc.html(blog.description);
     title.text(blog.title);
-    author.text('Author: '+blog.creator)
-    bg.css('background-image', 'url(' + blog.coverImage + ')');
+    author.text('Author: '+blog.creator);
+    aboutauthor.text(blog.aboutCreator);
+    creatorImage.attr("src",blog.creatorImage);
+
+    // bg.css('background-image', 'url(' + blog.coverImage + ')');
 }
 
 

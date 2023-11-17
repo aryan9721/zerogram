@@ -83,11 +83,15 @@ function getblogs() {
 
         // Append the blog entry content to the container
         container.append(blogEntryDiv);
+        $('#spinner').css('display','none');
+
     });
 }
 
 
   $(document).ready(function() {
+    $('#spinner').css('display','flex');
+
 	  getblogs();
   });
   

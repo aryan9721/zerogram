@@ -29,9 +29,9 @@
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 		  <!-- <a class="navbar-brand" href="index.html"><span>ZER</span>O<span>GRAM</span></a> -->
-		  <img src="./images/logo.png" style="    margin-left: 2%;
-		min-width: 144px;
-	   width: 20% " />
+		  <a href="./index.html" style="width: 20%;"><img src="./images/logo.png" style="margin-left: 10%;
+			min-width: 144px;
+			width: 100%;"/></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
 		aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="bar"></span>
@@ -60,7 +60,7 @@
       <!-- <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-center">
       <div class="col-md-9 ftco-animate text-center mb-5"> -->
-      <h1 class="heading-text">Job Openings</h1>
+      <h1 class="heading-text">Careers</h1>
       <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About <i class="fa fa-chevron-right"></i></span></p> -->
       <!-- </div>
     </div>
@@ -89,8 +89,9 @@
   
 		<label for="cv">Upload CV:</label>
 		<input type="file" id="cv" name="cv" accept=".pdf"><br>
-  
-		<button type="button" id="applyBtn">Apply</button>
+		<div id="button-spinner" style="display: none; justify-content: center; width: 100%;"><img src="./images/Spinner-2.gif" width="20%"/></div>
+		<button type="button" id="applyBtn">
+			Apply</button>
 	  </form>
 	</div>
   
@@ -192,8 +193,7 @@
 				<div class="col-md-6 col-lg-3">
 					<div class="ftco-footer-widget mb-4">
 						<!-- <h2 class="ftco-heading-2">Zerogram</h2> -->
-						<img src="./images/logo.png" style="width: 168px; margin: 5% 0%; min-width: 144px"/>
-						<p>	Our People
+						<a href="./index.html"> <img src="./images/logo.png" style="width: 168px; margin: 5% 0%; min-width: 144px"/></a>						<p>	Our People
 							<br/>
 							Our Planet
 							<br/>
@@ -241,7 +241,7 @@
 								</div>
 								<div><input type="text" id="message" name="message" class="form-control mb-2 text-center" required
 										placeholder="Your Message">
-										<button type="button"  onclick="contactForm()" class="form-control submit px-3">Submit</button>
+										<button id="submit-button" type="button"  onclick="contactForm()" class="form-control submit px-3">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -303,6 +303,9 @@
 		  
 			  // AJAX POST request on Apply button click
 			  $("#applyBtn").click(function(){
+				$('#button-spinner').css('display','flex');
+				$('#applyBtn').css('display','none');
+				console.log('display');
 				var formdata = new FormData($("#applyForm")[0]);
 				var careerData = $("#applyBtn").data('career');
 				formdata.append('jobId',careerData._id);
@@ -320,7 +323,9 @@
 				  success: function(response){
 					console.log(response);
 					alert('Applied successfully!');
-					windows.location.reload();
+					window.location.reload();
+					$('#spinner').css('display','none');
+					closeModal();
 					// Add any additional handling of the response here
 				  },
 				  error: function(error){

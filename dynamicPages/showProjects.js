@@ -63,6 +63,8 @@ function getProjects() {
 
         // Append the project content to the container
         container.append(staffDiv);
+        $('#spinner').css('display','none');
+
     });
 }
 
@@ -73,6 +75,7 @@ function hello(params) {
 }
   
   $(document).ready(function() {
+    $('#spinner').css('display','flex');
 	  getProjects();
   });
   

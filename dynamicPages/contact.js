@@ -17,6 +17,7 @@ function postFormData(name, email, message) {
     success: function (result) {
       console.log(result);
       alert('Thanks for contacting us, you will recieve an email from us soon!');
+      window.location.reload();
     },
     error: function (error) {
       alert('An error occured, Please try again after sometime!');
@@ -46,7 +47,8 @@ function postFormData(name, email, message) {
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
-  
+    var submit = $('#submit-button');
+    submit.text('Submitting...');
     postFormData(name, email, message);
   }
   

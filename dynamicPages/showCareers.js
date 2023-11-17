@@ -65,6 +65,8 @@ function getcareers() {
 
         // Append the career content to the container
         container.append(staffDiv);
+        $('#spinner').css('display','none');
+
         $('.applyNowButton').click(function() {
           var careerData = $(this).data('career');
           openApplyModal(careerData);
@@ -90,6 +92,8 @@ function hello(params) {
 }
   
   $(document).ready(function() {
+    $('#spinner').css('display','flex');
+
 	  getcareers();
   });
   
