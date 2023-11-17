@@ -55,7 +55,7 @@ function getcareers() {
             class: 'faded',
             html: '<p> Job Description' + career.description + '</p>' + 
                   '<p> Salary: ' + career.salary + '</p>' + 
-                  '<a href='+ career.applyNowLink +'><button class="applyNowButton"> Apply now </button></a>'
+                  '<button class="applyNowButton" data-career=\'' + JSON.stringify(career) + '\'> Apply now </button>'
         });
 
         // Assemble the elements
@@ -65,9 +65,24 @@ function getcareers() {
 
         // Append the career content to the container
         container.append(staffDiv);
+        $('.applyNowButton').click(function() {
+          var careerData = $(this).data('career');
+          openApplyModal(careerData);
+      });
     });
 }
+function openApplyModal(careerData) {
+  // Populate the modal with career data here
+  // For example, update the form fields with careerData values
 
+  // Open the modal
+  $("#applyModal").css("display", "block");
+  $(".overlay").css("display", "block");
+  $("#applyBtn").data('career', careerData);
+
+  // You can also do additional operations with careerData as needed
+  // console.log('Apply Now button clicked for career:', careerData);
+}
 function hello(params) {
   var container = $('.row');
   container.append('<h1>hi</h1>');

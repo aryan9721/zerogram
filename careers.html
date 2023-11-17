@@ -67,7 +67,35 @@
   </div> -->
     </div>
   </section>
+  <!-- <button id="openModalBtn">Open Modal</button> -->
 
+  <!-- The Modal -->
+  <div class="overlay" id="overlay">
+
+  <!-- The Modal -->
+  <div id="applyModal" onclick="">
+	<!-- Modal content -->
+	<div id="modalContent">
+	  <span id="closeModalBtn" class="close" onclick="closeModal()">&times;</span>
+	  <form id="applyForm">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br>
+  
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+  
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" rows="4" required></textarea><br>
+  
+		<label for="cv">Upload CV:</label>
+		<input type="file" id="cv" name="cv" accept=".pdf"><br>
+  
+		<button type="button" id="applyBtn">Apply</button>
+	  </form>
+	</div>
+  
+  </div>
+</div>
   <section class="ftco-section bg-light">
 	<div class="container">
 		<div class="row" id="careers-row">
@@ -253,6 +281,53 @@
 		<script src="js/main.js"></script>
 		<script src="dynamicPages/showCareers.js"></script>
 		<script src="dynamicPages/contact.js" defer></script>
+		<script>
+			  $("#closeModalBtn, .overlay").click(function (event) {
+    // Check if the clicked element is the modal content
+    if ($(event.target).is("#modalContent") || $(event.target).closest("#modalContent").length) {
+      return;
+    }
 
+    closeModal();
+  });
+			  // Open the modal
+			  function openModal() {
+				$("#applyModal").css("display", "block");
+				$(".overlay").css("display", "block");
+				}
+
+				function closeModal() {
+				$("#applyModal").css("display", "none");
+				$(".overlay").css("display", "none");
+			}
+		  
+			  // AJAX POST request on Apply button click
+			  $("#applyBtn").click(function(){
+				var formdata = new FormData($("#applyForm")[0]);
+				var careerData = $("#applyBtn").data('career');
+				formdata.append('jobId',careerData._id);
+				formdata.append('jobName',careerData.openingName);
+				console.log('formdata',formdata);
+				for (const [key, value] of formdata.entries()) {
+  console.log(`${key}: ${value}`);
+}
+				$.ajax({
+				  url: "http://localhost:4000/api/jobApplication",
+				  type: "POST",
+				  data: formdata,
+				  processData: false,
+				  contentType: false,
+				  success: function(response){
+					console.log(response);
+					alert('Applied successfully!');
+					windows.location.reload();
+					// Add any additional handling of the response here
+				  },
+				  error: function(error){
+					console.log('Error:', error);
+				  }
+				});
+			  });
+			</script>
 	</body>
 	</html>
