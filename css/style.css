@@ -8,6 +8,25 @@
 
 .tab-heading{
   background-color: #6DDABE;
+  padding-top: 0.5rem;
+  width: 33%;
+  color: #f0f0f0;
+  /* border: 10px solid white; */
+}
+.ptext{
+  padding: 30px;
+}
+.tab-heading label{
+  width: 100%;
+  height: 100%;
+}
+.tab-heading:hover{
+  cursor:grab;
+  background-color: #f0f0f0;
+  padding-top: 0.5rem;
+  width: 33%;
+  color: #000;
+  /* border: 1px solid black; */
 }
 .overlay {
   position: fixed;
@@ -107,7 +126,7 @@ button#openModalBtn {
   display: none;
 }
 
-.tabs label {
+/* .tabs label {
   display: inline-block;
   min-width: 25%;
   flex: 1 1 25%;
@@ -115,7 +134,7 @@ button#openModalBtn {
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 0.5s;
-  /* Safari 3.1 to 6.0 */
+  Safari 3.1 to 6.0
   transition: all 0.5s;
 }
 
@@ -132,16 +151,17 @@ button#openModalBtn {
     background-position: 0px 0;
    background-size: 54px 54px;
   }
-}
+} */
 
 .tab__content {
   display: none;
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+  /* margin: 0 auto; */
   box-sizing: border-box;
   background-color: #ffffff;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .tab__content * {
@@ -167,8 +187,9 @@ button#openModalBtn {
   }
 }
 
-.tabs [id^="tab"]:checked+label {
-  background: #FFF;
+.tabs [id^="tab"]:checked+div {
+  /* border: 10px solid white; */
+  background: #f0f0f0;
   color: #6DDABE;
 }
 
@@ -182,15 +203,22 @@ button#openModalBtn {
 #tab2:checked~#tab__content--2,
 #tab3:checked~#tab__content--3,
 #tab4:checked~#tab__content--4 {
-  display: block;
+  display: flex;
+  background-color: #f0f0f0;
 }
 
 @media (min-width: 768px) {
   .tabs label span {
     display: block;
   }
-}
 
+}
+@media(max-width: 768px)
+{
+  .content-img{
+    display: none;
+  }
+}
 .icon {
   /* margin-top: 1rem; */
   display: inline-block;
