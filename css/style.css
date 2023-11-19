@@ -13134,7 +13134,7 @@ h5,
   font-weight: 300;
   color: white;
   margin-bottom: 40px;
-  margin-top: 600px;
+  /* margin-top: 600px; */
 }
 
 .owl-carousel.home-slider .slider-item .slider-text h1 span {
