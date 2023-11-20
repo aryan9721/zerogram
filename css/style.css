@@ -5,6 +5,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /* Initial styling for the button */
+@media (max-width: 768px) {
+  .footer-text{
+    text-align: center !important;
+  }
+}
 
 .tab-heading{
   background-color: #6DDABE;
@@ -13133,7 +13138,7 @@ h5,
   font-size: 30px;
   font-weight: 300;
   color: white;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
   /* margin-top: 600px; */
 }
 
