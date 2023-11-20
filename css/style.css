@@ -6,11 +6,17 @@
  */
 /* Initial styling for the button */
 @media (max-width: 768px) {
-  .footer-text{
+  /* .footer-text{
     text-align: center !important;
+  } */
+  .owl-carousel.home-slider .slider-item .slider-text h1{
+    font-size: 20px !important;
   }
-}
 
+}
+.ftco-footer .subscribe-form .form-group input{
+  text-align: left !important;
+}
 .tab-heading{
   background-color: #6DDABE;
   padding-top: 0.5rem;
