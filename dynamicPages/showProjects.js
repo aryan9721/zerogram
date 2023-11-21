@@ -1,5 +1,5 @@
 // // api.js
-var DOMAIN = "http://54.81.138.240:4000/api"
+var DOMAIN = "http://3.82.10.94:4000/api"
 
 function getProjects() {
 	$.ajax({

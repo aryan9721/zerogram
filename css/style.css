@@ -473,7 +473,10 @@ button#openModalBtn {
 .heading-text {
   position: absolute;
   bottom: 50px;
-  color: #6DDABE;
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 70px;
+  font-weight: 900;
 }
 
 .countdown-item {
