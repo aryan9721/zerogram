@@ -302,7 +302,7 @@ setInterval(updateCountdown, 1000);
 // 	  redirect: 'follow',
 // 	};
   
-// 	fetch("http://localhost:4000/api/project", requestOptions)
+// 	fetch("http://54.81.138.240:4000/api/project", requestOptions)
 // 	  .then(response => response.text())
 // 	  .then(result => displayData(result))
 // 	  .catch(error => console.log('Error:', error));

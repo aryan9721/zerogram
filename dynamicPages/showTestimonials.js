@@ -96,7 +96,7 @@ function displayData(dataArray) {
 }
 function fetchTestimonials() {
     $.ajax({
-        url: "http://localhost:4000/api/testimonial",
+        url: "http://54.81.138.240:4000/api/testimonial",
         method: "GET",
         dataType: "json", // Assuming the API returns JSON
         success: function (data) {

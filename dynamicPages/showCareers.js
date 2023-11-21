@@ -1,5 +1,5 @@
 // // api.js
-var DOMAIN = "http://localhost:4000/api"
+var DOMAIN = "http://54.81.138.240:4000/api"
 
 function getcareers() {
 	$.ajax({
