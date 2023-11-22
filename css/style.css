@@ -12,7 +12,9 @@
   .owl-carousel.home-slider .slider-item .slider-text h1{
     font-size: 20px !important;
   }
-
+  .heading-text{
+    font-size: 40px !important;
+  }
 }
 .ftco-footer .subscribe-form .form-group input{
   text-align: left !important;
