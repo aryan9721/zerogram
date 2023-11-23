@@ -302,7 +302,7 @@ setInterval(updateCountdown, 1000);
 // 	  redirect: 'follow',
 // 	};
   
-// 	fetch("http://54.224.9.235:4000/api/project", requestOptions)
+// 	fetch("https://backend.zerogram.co/api/project", requestOptions)
 // 	  .then(response => response.text())
 // 	  .then(result => displayData(result))
 // 	  .catch(error => console.log('Error:', error));

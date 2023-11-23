@@ -96,7 +96,7 @@ function displayData(dataArray) {
 }
 function fetchTestimonials() {
     $.ajax({
-        url: "http://54.224.9.235:4000/api/testimonial",
+        url: "https://backend.zerogram.co/api/testimonial",
         method: "GET",
         dataType: "json", // Assuming the API returns JSON
         success: function (data) {

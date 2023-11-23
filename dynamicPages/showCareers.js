@@ -1,5 +1,5 @@
 // // api.js
-var DOMAIN = "http://54.224.9.235:4000/api"
+var DOMAIN = "https://backend.zerogram.co/api"
 
 function getcareers() {
 	$.ajax({
