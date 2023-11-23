@@ -26,6 +26,12 @@ function getProjects() {
 
     if (projects.length === 0) {
         console.log('No projects found in the API response.');
+        console.log('No careers found in the API response.');
+        var text = $('<h3>', {
+          text: 'No Projects are available right now!'
+        });
+        container.append(text);
+        $('#spinner').css('display','none');
         return;
     }
 

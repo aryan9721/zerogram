@@ -26,6 +26,11 @@ function getcareers() {
 
     if (careers.length === 0) {
         console.log('No careers found in the API response.');
+        var text = $('<h3>', {
+          text: 'No careers options are available right now!'
+        });
+        container.append(text);
+        $('#spinner').css('display','none');
         return;
     }
 
