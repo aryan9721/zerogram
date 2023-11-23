@@ -1,4 +1,5 @@
 function postFormData(name, email, message) {
+  console.log('submiiting',name,email,message);
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
