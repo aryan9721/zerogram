@@ -13,7 +13,7 @@ function postFormData(name, email, message) {
     headers: myHeaders,
     data: JSON.stringify(data), // Use data instead of raw
     contentType: 'application/json', // Set content type explicitly
-    url: "http://3.82.10.94:4000/api/contact", // Specify the URL
+    url: "http://54.224.9.235:4000/api/contact", // Specify the URL
     success: function (result) {
       console.log(result);
       alert('Thanks for contacting us, you will recieve an email from us soon!');
@@ -27,7 +27,7 @@ function postFormData(name, email, message) {
   $.ajax(requestOptions);
 
     // $.ajax({
-    //   url: "http://3.82.10.94:4000/api/contact",
+    //   url: "http://54.224.9.235:4000/api/contact",
     //   type: "POST",
     //   data: raw,
     //   processData: false,
