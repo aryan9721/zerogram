@@ -44,7 +44,7 @@
 	    animateIn: 'fadeIn',
 	    nav:true,
 	    dots: false,
-	    autoplayHoverPause: false,
+	    autoplayHoverPause: true,
 	    items: 1,
 	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
 	    responsive:{
