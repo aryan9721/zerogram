@@ -37,6 +37,8 @@ function getblogs() {
   }
 
   function displayBlog(blog) {
+    var spinner = $('#spinner');
+    spinner.css('display','flex')
     var title = $('#blog-title');
     var desc = $('#blog-desc');
     var author = $('#blog-author');
@@ -49,6 +51,10 @@ function getblogs() {
     author.text('Author: '+blog.creator);
     aboutauthor.text(blog.aboutCreator);
     creatorImage.attr("src",blog.creatorImage);
+    var blog = $('#text');
+    spinner.css('display','none')
+    blog.css('display','block');
+
 
     // bg.css('background-image', 'url(' + blog.coverImage + ')');
 }
