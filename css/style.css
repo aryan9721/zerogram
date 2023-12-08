@@ -492,9 +492,9 @@ button#openModalBtn {
   position: absolute;
   bottom: 50px;
   color: white;
-  font-family:'Times New Roman', Times, serif;
+  /* font-family:'Times New Roman', Times, serif; */
   font-size: 70px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .countdown-item {
