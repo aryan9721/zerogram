@@ -5,7 +5,30 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /* Initial styling for the button */
+.heading-text-mobile{
+  display: none;
+}
+.heading-text-2 {
+  color: #6DDABE;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 30px;
+  z-index: 1;
+}
 
+.image2{
+  position: absolute;
+  /* border: 1px solid black; */
+  left: 10%;
+  bottom: 0;
+}
+.image1{
+  position: absolute;
+  /* border: 1px solid black; */
+  right: 10%;
+  bottom: 0;
+}
 .subheading-2:hover{
   color: white;
 }
@@ -17,6 +40,10 @@
 @media (max-width: 768px){
   .purpose-image{
     display: none !important;
+  }
+  .heading-text-mobile{
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
@@ -491,9 +518,9 @@ button#openModalBtn {
 .heading-text {
   position: absolute;
   bottom: 50px;
-  color: white;
+  color: #6DDABE;
   /* font-family:'Times New Roman', Times, serif; */
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 600;
 }
 
@@ -12993,9 +13020,13 @@ h5,
   opacity: .4;
   background: #000000;
 }
-
+@media (max-width: 768px){
+  .hero-wrap.hero-wrap-2{
+    display: none;
+  }
+}
 .hero-wrap.hero-wrap-2 {
-  height: 400px;
+  height: 350px;
 }
 
 .hero-wrap.hero-wrap-2 .overlay {
