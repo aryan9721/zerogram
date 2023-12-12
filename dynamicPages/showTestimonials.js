@@ -94,6 +94,40 @@ function displayData(dataArray) {
         autoplayHoverPause: true
     });
 }
+
+const staticData = [
+    {
+        "_id": "654939fea7be94f615ff6a63",
+        "name": "David Healey",
+        "designation": "Managing Director, SmartGrid Solutions",
+        "rating": "5",
+        "review": `Zerogram's ability to navigate complex sustainability challenges and deliver
+        concise, practical solutions has greatly enhanced the quality of our service delivery.`,
+        "creatorImage": "../images/david.jpeg",
+        "__v": 0
+    },
+    {
+        "_id": "654939fea7be94f615ff6a63",
+        "name": "Sarah Matthews",
+        "designation": "Headmistress, Truro High School",
+        "rating": "5",
+        "review": `The roadmap crafted by Zerogram not only addresses our unique needs but also provides a clear and strategic plan
+        to navigate the complexities of decarbonisation.`,
+        "creatorImage": "../images/sarah.jpeg",
+        "__v": 0
+    },
+    {
+        "_id": "654939fea7be94f615ff6a63",
+        "name": "Marie Kirbyshaw",
+        "designation": "Chief Executive, The Culture Trust, Luton",
+        "rating": "5",
+        "review": `I wholeheartedly recommend Zerogram to any
+        organization seeking a partner in their journey towards a more sustainable and environmentally responsible future.`,
+        "creatorImage": "../images/luton.jpeg",
+        "__v": 0
+    },
+];
+
 function fetchTestimonials() {
     $.ajax({
         url: "https://backend.zerogram.co/api/testimonial",
@@ -105,7 +139,7 @@ function fetchTestimonials() {
             }
             else {
                 console.log(data);
-                displayData(data);
+                displayData(staticData);
             }
         },
         error: function (error) {
