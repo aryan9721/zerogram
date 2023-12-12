@@ -37,7 +37,7 @@ function getProjects() {
 
     projects.forEach(function(project) {
         var staffDiv = $('<div>', {
-            class: 'col-md-6 col-lg-3 ftco-animate  fadeInUp ftco-animated'
+            class: 'col-md-6 col-lg-4 ftco-animate  fadeInUp ftco-animated'
         });
 
         var staffContent = $('<div>', {
