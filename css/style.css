@@ -45,6 +45,15 @@
     display: flex;
     justify-content: center;
   }
+  .contact-img{
+    display: none !important;
+  }
+  .ptm{
+    padding-top: 100px !important;
+  }
+  .ptext{
+    padding: 0 !important;
+  }
 }
 @media (max-width: 768px) {
   /* .footer-text{
