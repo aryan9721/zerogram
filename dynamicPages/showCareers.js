@@ -61,7 +61,7 @@ function getcareers() {
             class: 'faded',
             html: '<html> About the Job: ' + career.description + '</html>' + 
                   '<p> Salary: ' + career.salary + '</p>' + 
-                  '<button class="applyNowButton" data-career=\'' + JSON.stringify(career) + '\'> Apply now </button>'
+                  `<button class="applyNowButton" data-career=\'' + JSON.stringify(career) + '\'> Apply now </button>`
         });
 
         // Assemble the elements
