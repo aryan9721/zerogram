@@ -37,7 +37,7 @@ function getcareers() {
 
     careers.forEach(function(career) {
         var staffDiv = $('<div>', {
-            class: 'col-md-6 col-lg-3 ftco-animate  fadeInUp ftco-animated'
+            class: 'col-md-6 col-lg-4 ftco-animate  fadeInUp ftco-animated'
         });
 
         var staffContent = $('<div>', {
@@ -59,7 +59,7 @@ function getcareers() {
 
         var bio = $('<div>', {
             class: 'faded',
-            html: '<p> Job Description' + career.description + '</p>' + 
+            html: '<html> About the Job: ' + career.description + '</html>' + 
                   '<p> Salary: ' + career.salary + '</p>' + 
                   '<button class="applyNowButton" data-career=\'' + JSON.stringify(career) + '\'> Apply now </button>'
         });

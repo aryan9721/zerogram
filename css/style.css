@@ -41,6 +41,9 @@
   .purpose-image{
     display: none !important;
   }
+  .nmd{
+    display: none !important;
+  }
   .heading-text-mobile{
     display: flex;
     justify-content: center;
