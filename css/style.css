@@ -5,6 +5,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /* Initial styling for the button */
+@supports (-webkit-touch-callout: none) {
+  #test{
+    background-image: url(images/bg_5.jpg) !important;
+  }
+}
 .heading-text-mobile{
   display: none;
 }
