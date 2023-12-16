@@ -82,12 +82,12 @@ function getblogs() {
         var readMoreLink = $('<a>', {
             href: entry.link,
             class: 'float-left read btn btn-primary',
-            text: 'Read more',
+            text: 'Know more',
         });
 
         // Assemble the elements
-        innerDiv.append(authorLink);
-        metaDiv.append(innerDiv);
+        // innerDiv.append(authorLink);
+        // metaDiv.append(innerDiv);
         headingH3.append(headingLink);
         clearp.append(readMoreLink);
         textContent.append(metaDiv, headingH3, clearp);
