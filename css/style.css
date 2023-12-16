@@ -20,7 +20,14 @@
   .black{
     color: #1a1a1a !important;
   }
+  .ftco-intro span{
+    color: #1a1a1a !important;
+  }
 }
+
+/* .black{
+  color: #1a1a1a !important;
+} */
 /* .green{
   color: white !important;
 } */
