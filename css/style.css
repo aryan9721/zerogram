@@ -5,14 +5,18 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /* Initial styling for the button */
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) { */
   #test{
-    background-image: none !important;
+    background-image: url(../images/pattern.png) !important;
+    background-color: #F7FFEA !important;
     color: #6DDABE !important;
+    padding: 4em 0 !important;
   }
   #count{
-    background-image: none !important;
+    background-image: url(../images/pattern.png) !important;
+    background-color: #F7FFEA !important;
     color: #6DDABE !important;
+    padding: 4em 0 !important;
   }
   .green{
     color: #6DDABE !important;
@@ -23,7 +27,7 @@
   .ftco-intro span{
     color: #1a1a1a !important;
   }
-}
+/* } */
 
 /* .black{
   color: #1a1a1a !important;
