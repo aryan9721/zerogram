@@ -7,8 +7,15 @@
 /* Initial styling for the button */
 @supports (-webkit-touch-callout: none) {
   #test{
-    background-image: url(images/bg_5.jpg) !important;
+    background-image: url(../images/bg_5.jpg) !important;
+    color: #6DDABE !important;
   }
+  .green{
+    color: #6DDABE !important;
+  }
+}
+.green{
+  color: white !important;
 }
 .heading-text-mobile{
   display: none;
