@@ -7,16 +7,16 @@
 /* Initial styling for the button */
 @supports (-webkit-touch-callout: none) {
   #test{
-    background-image: url(../images/bg_5.jpg) !important;
+    background-image: none !important;
     color: #6DDABE !important;
   }
   .green{
     color: #6DDABE !important;
   }
 }
-.green{
+/* .green{
   color: white !important;
-}
+} */
 .heading-text-mobile{
   display: none;
 }
