@@ -5,16 +5,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /* Initial styling for the button */
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) { */
   #test{
     background-image: none !important;
-    background-color: #F7FFEA !important;
+    background-color: #F5FBF1 !important;
     color: #6DDABE !important;
     padding: 4em 0 !important;
   }
   #count{
     background-image: none !important;
-    background-color: #F7FFEA !important;
+    background-color: #F5FBF1 !important;
     color: #6DDABE !important;
     padding: 4em 0 !important;
   }
@@ -27,7 +27,7 @@
   .ftco-intro span{
     color: #1a1a1a !important;
   }
-}
+/* } */
 
 /* .black{
   color: #1a1a1a !important;
@@ -576,7 +576,7 @@ button#openModalBtn {
 }
 
 .countdown-label {
-  font-size: 18px;
+  font-size: 10px;
   margin-top: 5px;
 }
 
