@@ -7,13 +7,13 @@
 /* Initial styling for the button */
 @supports (-webkit-touch-callout: none) {
   #test{
-    background-image: url(../images/pattern.png) !important;
+    background-image: none !important;
     background-color: #F7FFEA !important;
     color: #6DDABE !important;
     padding: 4em 0 !important;
   }
   #count{
-    background-image: url(../images/pattern.png) !important;
+    background-image: none !important;
     background-color: #F7FFEA !important;
     color: #6DDABE !important;
     padding: 4em 0 !important;
