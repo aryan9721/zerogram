@@ -10,8 +10,15 @@
     background-image: none !important;
     color: #6DDABE !important;
   }
+  #count{
+    background-image: none !important;
+    color: #6DDABE !important;
+  }
   .green{
     color: #6DDABE !important;
+  }
+  .black{
+    color: #1a1a1a !important;
   }
 }
 /* .green{

@@ -68,14 +68,14 @@ function displayData(dataArray) {
         var newItem = `<div class="item">
                             <div class="testimony-wrap text-center">
                                 <div class="text p-3">
-                                    <p class="mb-4 green">${item.review}</p>
+                                    <p class="mb-4 black">${item.review}</p>
                                     <div class="user-img mb-4" style="background-image: url(${item.creatorImage})">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="fa fa-quote-left"></i>
                                         </span>
                                     </div>
-                                    <p class="name green">${item.name}</p>
-                                    <span class="position green">${item.designation}</span>
+                                    <p class="name black">${item.name}</p>
+                                    <span class="position black">${item.designation}</span>
                                 </div>
                             </div>
                         </div>`;
